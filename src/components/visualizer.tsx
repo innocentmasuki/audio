@@ -59,7 +59,7 @@ const Visualizer = () => {
         </button>
       </div>
       <div className={"text-white w-full text-center z-20 py-2 backdrop-blur absolute bottom-0 mx-auto"}>Music by <a target={"_blank"} href="https://pixabay.com/users/alisiabeats-39461785/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=170190">Alisia</a> from <a target={"_blank"} href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=170190">Pixabay</a></div>
-      <audio loop ref={audioRef} src={AUDIO_SRC} hidden />
+      <audio loop ref={audioRef} src={AUDIO_SRC} hidden crossOrigin="anonymous" autoPlay />
       <Equalizer audio={audioRef} {...visualiserConfig}/>
     </div>
   );
